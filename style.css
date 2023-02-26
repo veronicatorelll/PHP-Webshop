@@ -1,0 +1,253 @@
+:root {
+    /* color palette */
+    --spanishgrey: #a59b97;
+    --isabelline: #ebe4df;
+    --sonicsilver: #797371;
+    --beaver: #9b8275;
+    --cultured: #f8f7f6;
+    --black: black;
+    --white: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cultured);
+}
+
+a {
+    text-decoration: none;
+    color: var(--beaver);
+    font-size: 1.2rem;
+}
+
+header {
+    height: 27vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1591243315780-978fd00ff9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    text-shadow: 0.4px 0.4px var(--cultured);
+    color: var(--beaver);
+}
+
+nav {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a {
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.98rem;
+}
+
+nav>a:hover {
+    border-bottom: 1px solid var(--spanishgrey);
+}
+
+main {
+    width: 100vw;
+    min-height: 70vh;
+    background-color: var(--isabelline);
+    margin: auto;
+    padding: 10px;
+}
+
+.btn {
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.about {
+    width: 50vw;
+    margin: auto;
+}
+
+/* basic styling ends here */
+
+/* styling for login och register page here */
+.user-div {
+    background-color: white;
+    border-radius: 8px;
+    width: 450px;
+    margin: auto;
+    padding: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button,
+input,
+.text-input {
+    border-radius: 8px;
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid var(--isabelline);
+}
+
+button {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.success {
+    background-color: #90ee90;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.fail {
+    background-color: #ffcccb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* styling for login och register page ends here */
+
+/* styling for profile page here */
+
+.admin-create-div,
+.customer-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px;
+}
+
+.admin-div,
+.customer-contact-div,
+.update-product-div,
+.admin-order-div,
+.admin-message-div,
+.customer-orders-div,
+.customer-contact-div {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid var(--sonicsilver);
+}
+
+.link {
+    width: 73%;
+}
+
+.profile-show-all {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--cultured);
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.btn-edit {
+    background-color: var(--beaver);
+    color: var(--cultured);
+    border: none;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.btn-create {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.change-roll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.change-roll>input,
+.change-roll>select {
+    background-color: var(--beaver);
+    color: var(--cultured);
+    height: 30px;
+    margin: 4px;
+}
+
+.profile-all-mess {
+    border: 1px solid var(--cultured);
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.done {
+    display: inline;
+    color: green;
+    text-transform: uppercase;
+}
+
+/* styling for profile page ends here */
+
+
+/* styling for products and product starts here */
+
+.product-container {
+    display: grid;
+    grid-gap: 10px 20px;
+    grid-column: 1/2;
+    justify-items: center;
+}
+
+.productinfo {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    color: var(--beaver);
+    line-height: 25px;
+}
+
+/* styling for products and product ends here */
+
+/* cart styling starts here */
+
+.cart {
+    width: 50vw;
+    margin: auto;
+}
+
+/* cart styling ends here */
